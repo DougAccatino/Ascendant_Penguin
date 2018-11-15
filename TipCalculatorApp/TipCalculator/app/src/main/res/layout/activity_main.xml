@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.twins.tipcalculator.MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="4"
+        android:entries="@array/number_arrays"
+        android:prompt="@string/People_prompt" />
+
+    <EditText
+        android:id="@+id/editText_BillAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_row="0"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="6"
+        android:padding="@dimen/padding_textView_default"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_BillAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_margin="20dp"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="0"
+        android:background="@color/backgroundBillAmount"
+        android:textStyle="bold"
+        android:hint="@string/textView_billAmountHint"
+        android:padding="@dimen/padding_textView_default"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+
+        />
+
+
+
+    <SeekBar
+        android:id="@+id/percentSeeBar"
+        android:layout_marginRight="93dp"
+        android:layout_marginEnd= "@dimen/padding_textView_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:layout_columnSpan="2"
+        android:padding="@dimen/padding_textView_default"
+
+        />
+
+    <TextView
+        android:id="@+id/percentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/tip_percent"
+        android:layout_columnSpan="2"
+        android:layout_column="0"
+        android:padding="@dimen/padding_textView_default"
+        android:layout_row="1"
+        android:textStyle="bold"
+         />
+
+
+    <TextView
+        android:id="@+id/tipLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:layout_columnSpan="2"
+        android:padding="@dimen/padding_textView_default"
+        android:hint="@string/tip"
+        android:textStyle="bold"
+          />
+
+
+    <TextView
+        android:id="@+id/tip_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="2"
+        android:layout_marginRight="@dimen/padding_textView_default"
+        android:layout_marginEnd= "@dimen/padding_textView_default"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/result_background"
+        android:padding="@dimen/textView_padding"
+        android:hint="@string/tipAmount_View"
+
+         />
+
+
+
+
+    <TextView
+        android:id="@+id/totalLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_textView_default"
+        android:textStyle="bold"
+        android:layout_column="0"
+        android:hint="@string/total"
+        android:padding="@dimen/textView_padding"
+        android:layout_row="3"
+
+         />
+
+
+
+    <TextView
+        android:id="@+id/total_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_column="1"
+        android:layout_row="3"
+        android:layout_marginRight="@dimen/padding_textView_default"
+        android:layout_marginEnd= "@dimen/padding_textView_default"
+        android:layout_marginTop="@dimen/padding_textView_default"
+        android:background="@color/result_background"
+        android:padding="@dimen/textView_padding"
+        android:hint="@string/total_Amount"
+
+         />
+
+    <RadioGroup
+        android:layout_width="209dp"
+        android:layout_height="137dp"
+        android:layout_column="1"
+        android:layout_row="6">
+
+        <RadioButton
+            android:id="@+id/noRadio"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No" />
+
+        <RadioButton
+            android:id="@+id/radioTip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tip" />
+
+        <RadioButton
+            android:id="@+id/radioTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/perPersonText"
+        android:layout_width="189dp"
+        android:layout_height="43dp"
+        android:layout_column="1"
+        android:layout_row="5"
+        android:text="Per  Person Total ..." />
+
+    <TextView
+        android:id="@+id/textPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_column="0"
+        android:layout_row="5"
+        android:text="Per Person" />
+
+</GridLayout>
