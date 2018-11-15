@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/i"
+    android:orientation="vertical"
+    tools:context="example.basic.com.cmp430_multipleactivities.SecondActivity">
+
+    <TextView
+        android:id="@+id/team2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:textAlignment="center"
+        android:textColor="#F00"
+        android:textSize="56sp"
+        android:text="Team 2" />
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="Score!"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_large"
+        android:onClick="countUp"/>
+
+    <TextView
+        android:id="@+id/tv_display2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="0"
+        android:textColor="#F00"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_xlarge" />
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Click for Team 1"
+        android:textSize="@dimen/text_large"
+        android:onClick="nextActivity"/>
+
+</LinearLayout>
